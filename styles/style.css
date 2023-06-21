@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --outfit: 'Outfit', sans-serif;
+    --para-font-size: 18px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--outfit);
+    background: var(--very-dark-blue-main-bg);
+    color: var(--white);
+}
+
+.main-container {
+    background: var(--very-dark-blue-card-bg);
+    max-width: 35rem;
+    position: relative;
+}
+
+.big-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-container {
+    width: 100%;
+    position: relative;
+}
+
+.card-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    width: 96%;
+    height: auto;
+    position: absolute;
+    margin-left: 6px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background: var(--cyan);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.icon:hover {
+    cursor: pointer;
+    fill: hsl(0, 0%, 100%);
+}
+
+.main-container,
+.big-img,
+.overlay {
+    border-radius: 12px;
+}
+
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.equil-text {
+    color: var(--soft-blue);
+}
+
+.eth-p {
+    color: var(--cyan);
+}
+
+.time-remaining {
+    color: var(--soft-blue);
+}
+
+hr {
+    border: 1px solid var(--soft-blue);
+    width: 31rem !important;
+}
+
+.creation-text {
+    color: var(--soft-blue);
+}
+
+.avatar-img {
+    max-width: 3rem;
+}
+
+.creator:hover {
+    color: var(--cyan) !important;
+    cursor: pointer;
+}
+
+
+
+
+
