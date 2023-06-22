@@ -45,7 +45,7 @@ body {
 }
 
 .card-container:hover .overlay {
-    opacity: 1;
+    opacity: .5;
 }
 
 .overlay {
